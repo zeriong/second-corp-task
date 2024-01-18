@@ -11,7 +11,7 @@ export default function Home() {
               src='assets/images/logo_lg.svg'
               width={150}
               height={51}
-              alt="logo"
+              alt="intro_page_brand_logo"
           />
           <Link href="/order" className='text-[25px] px-[11px] py-[22px] bg-white rounded-2xl cursor-pointer'>
             주문하러가기

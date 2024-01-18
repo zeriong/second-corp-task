@@ -1,7 +1,6 @@
 'use client'
 
 import Image from "next/image";
-import {useParams} from "next/navigation";
 
 export const Header = () => {
     return (
@@ -10,7 +9,7 @@ export const Header = () => {
                 src='/assets/images/logo_sm.svg'
                 width={95}
                 height={32}
-                alt="logo"
+                alt="order_page_brand_logo"
             />
         </header>
     )
