@@ -11,7 +11,7 @@ export default async function OrderLayout(props: { children: React.ReactNode }) 
     return (
         <div className='w-full h-full'>
             <div className="h-full pb-[160px]">
-                <div className="h-full overflow-y-auto pb-[10px]">
+                <div className="h-full overflow-y-auto scroll-hidden pb-[10px]">
                     {props.children}
                 </div>
             </div>

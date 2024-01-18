@@ -9,8 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        "pc" : "510px",
+        pc : "510px",
       },
+      colors: {
+        "event-orange": "#F75A2F",
+      }
     },
   },
   plugins: [],

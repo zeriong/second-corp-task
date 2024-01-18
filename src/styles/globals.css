@@ -10,3 +10,12 @@ html {
 body {
   background-color: #B5B5B5;
 }
+
+.scroll-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+  }
+}
