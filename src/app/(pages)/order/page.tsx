@@ -1,5 +1,5 @@
-import {API_URL} from "@/constants";
-import {OrderListItem} from "@/components/ui/order/OrderListItem";
+import {API_URL} from '@/constants';
+import {OrderListItem} from '@/components/ui/order/OrderListItem';
 
 export default async function OrderPage() {
     const items = await fetch(`${API_URL}/items`, {
@@ -15,7 +15,7 @@ export default async function OrderPage() {
                 items.map((item: any, idx: number) => (
                     <OrderListItem key={idx} item={item}/>
                 )) : (
-                    <div className="w-full h-[320px] flex items-center justify-center">
+                    <div className='w-full h-[320px] flex items-center justify-center'>
                         상품이 존재하지 않습니다.
                     </div>
                 )

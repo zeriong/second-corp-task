@@ -10,10 +10,9 @@ export default function Page() {
     const router = useRouter();
     const resetOrdersState= useResetRecoilState(ordersState);
 
+    // 주문 성공 시 주문 초기화 이후 3초 경과 시 주문 페이지로 이동
     useEffect(() => {
-        // 주문 초기화
-        resetOrdersState();
-        // 3초 후 이동
+        resetOrdersState(); // 주문 초기화
         setTimeout(() => {
             router.push('/order');
         }, 3000);
@@ -25,7 +24,7 @@ export default function Page() {
                 src='/assets/icons/check_icon.svg'
                 width={48}
                 height={48}
-                alt=''
+                alt='check_icon'
             />
             <p>주문이 완료되었습니다.</p>
         </div>

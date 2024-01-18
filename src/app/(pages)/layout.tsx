@@ -1,8 +1,7 @@
 import React from 'react';
-import {Header} from "@/components/ui/Header";
+import {Header} from '@/components/ui/Header';
 
 export default function PageLayout(props: { params: any, children: React.ReactNode }) {
-
     return (
         <>
             <Header/>
